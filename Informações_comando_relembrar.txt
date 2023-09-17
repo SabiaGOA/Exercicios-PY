@@ -1,0 +1,128 @@
+print ('Vamos Começar')
+
+#Anotações
+#=======================================================================================================================
+a = input('Digite Algo')          #Podemos "fazer uma pergunta ou pedir algo" e apos a informações ser
+print (a)                         #apresentadas,o computador apresentar elas.
+b = input('Digite Algo')          #usando "qualquer coisa = ('')" seguido do print ()
+print ('Ok,',b)
+#=======================================================================================================================
+n1 = int(input('Digite um Número:'))     #podemos fazer calculos, usando o "INT"
+n2 = int(input('Digite um Número:'))
+r1 = n1 + n2 #adição
+r2 = n1 * n2 #multiplicação
+r3 = n1 / n2 #divisão fracionada
+r4 = n1 - n2 #subtração
+r5 = n1 ** n2 #potencia
+r6 = n1 // n2 #divisão inteira
+r7 = n1 ** (1/2) #achar raiz quadrada
+r8 = n1 % n2 #resto da divisão inteira
+print (f'resultado; {r1},{r2},{r3},{r4},{r5},{r6},{r7},{r8}')
+#=======================================================================================================================
+#podemos usar a tag "alguma coisa".is como forma de confirma os caracteres de uma palavra
+a = input ('Digite algo')
+print (a,a.isalpha())
+#para saber todos os "is" va ao exercicio 04
+#=======================================================================================================================
+#modulos em python
+#Podemos Utilizar Blibliotecas para extender as funcionalidades do programa
+#com o comando import "" e uma bliblioteca especifica para algo
+import math
+#podemos escolher uma area especifica dessa bliblioteca com
+from math import sqrt
+#=======================================================================================================================
+'''# Cadeia de Texto --> '[C][u][r][s][o][ ][e][m][] [V][i][d][e][o][] [P][y][t][h][o][n](20caracteres)'
+frase = 'Curso em Video Python - Atribuição de string dentro de uma variavel,cria um monte de quadrados que podem ser 
+identificado por números, da primeira letra ate a ultima, contando espaço entre as palavras
+tecnica de fatiamento de string:frase[9]= localiza o caracter "9"
+podemos usar outro tipo de fatiamento,como frase[9:13], sendo que o '13' náo sera contado, sendo o ultimo valor não send
+o contado
+frase[9:21:2], nesse caso, começa no nove, vai ate o caractere 21, pulando de dois em dois(por causa do dois no final),
+com as palavras puladas sendo ignoradas
+frase[:5], nao colocando o número antes do dois ponto, ira começar do zero e ira ate o caracter indicado
+frase[15:]Do Mesmo Jeito, indica o inicio, sem falar o final, entao ira do 15 ate o final.
+frase[9::3]Começa do nove, sem indicar o final(ira ate o final possivel) e saltara três caracteres.
+'''
+
+'''Analise
+len(frase)Analisa o comprimento ou quantidade de caracteres de uma frase,microespaço.
+frase.count('o')conta quantas vezes aparece a letra 'o', sem contar as maisculas
+frase.count('o',0,13) faz uma contagem ja com fatiamento, ou seja considera ate o treze(ou zero ate o doze,ja que o 
+ultimo valor e sempre desconsiderado)
+frase.find('deo')ele fala onde começou a frase escrita
+frase.find('Android'), se n haver a string android, ele aponta um valor -1, significa que ele esta
+dizendo que não foi encontrado na string
+'curso' in frase , diz se existe a palavra na string
+'''
+
+'''
+transformação
+
+frase.replace('Python','Android') Troca uma Frase , pela outra
+frase.upper() transforma uma palavra em minuscula em maiscula
+frase.lower()mantem o minusculu e transforma os maisculos em minusculos
+frase.capitalize()joga todos os caracteres em minusculos, transformando apenas o primeiro em maiscula
+frase.title()Transforma as palavras que estão apos o espaço em maisculas
+[][][][][A][p][r][e][n][d][a][] [P][y][t][h][o][n][][][][][]
+frase.strip() remove espaços inuteis(sem palavras ou sem utilidade)
+frase.rstrip()(righ ou direita) remove somente os ultimos espaços  e tambem tem o "l" qe remove os da esquerda
+'''
+
+'''
+divisão
+
+frase.split() divide os caracteres considerando os espaços
+[C][u][r][s][o][] [E][m][] V][i][d][e][o][ ][P][y][t][h][o][n]
+apos o split
+[C][u][r][s][o] [e][m] [V][i][d][e][o] [P][y][t][h][o][n]
+apos a divisão, os espaços são retirado e a contagem começa a partir de cada palavra
+criando outras listas na frase, onde cada palavra ha uma numeração
+
+tambem podemos JUNTAR(Junção)
+'-'.join(frase), gera uma cadeira de caracteres juntando as cadeias, com um traço ''-''
+'''
+#====================================================================================================
+
+'''
+Estudando IF e ELSE , aula 10, Estrutura Condicional
+estrutura sequencial
+passos- algoritimo
+
+if carro,esquerda():
+    Bloco True
+else:
+    Bloco False  
+'''
+'''\033[style;text; back m
+\033[0;33;44m
+
+style_0(sem estilo),1(deixa em negrito),4(sublinhado),7(inverte)
+text_30-37
+30-branco
+31 vermelho
+32 verde
+33 amarelo
+34 azul
+35 roxo
+36 ciano
+37 cinza
+back_40-47, com as mesma cores do text
+
+\033[0;30;41m
+\033[4;33;46m
+\033[1;35;43m
+\033[30;42m
+\033[m
+\033[7;30m
+'''
+
+'''
+Condições Alinhadas
+
+if "":
+==============
+elif "":   PODE SER USADOS QUANTAS VEZES QUERER!
+elif "":
+================
+senão:
+'''
